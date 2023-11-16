@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Models
 {
-    public class Service : IEntity
+    public class AppService : IEntity
     {
-        public Service()
+        public AppService()
         {
             InsertedDate = DateTime.Now;
             Status = DataStatus.Inserted;

@@ -8,22 +8,19 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Models
 {
-    public class About : IEntity
+    public class AppWork : IEntity
     {
-        public About()
+        public AppWork()
         {
             InsertedDate = DateTime.Now;
             Status = DataStatus.Inserted;
         }
-        public int AboutID { get; set; }
-        public string? AboutTitle { get; set; }
-        public string? AboutImage { get; set; }
-        public string? AboutCV { get; set; }
-        public string? AboutDesc1 { get; set; }
-        public string? AboutDesc2 { get; set; }
-        public string? AboutDesc3 { get; set; }
-        public string? AboutDesc4 { get; set; }
-        public bool AboutStatus { get; set; }
+        public int WorkID { get; set; }
+        public string? WorkTitle { get; set; }
+        public string? WorkPlatform { get; set; }
+        public string? WorkImage { get; set; }
+        public string? WorkDescription { get; set; }
+        public string? WorkLinkToWeb { get; set; }
         public DateTime InsertedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public DateTime? DeletedDate { get; set; }

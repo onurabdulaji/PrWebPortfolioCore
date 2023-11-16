@@ -8,16 +8,17 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Models
 {
-    public class MyClient : IEntity
+    public class AppTestimonial : IEntity
     {
-        public MyClient()
+        public AppTestimonial()
         {
             InsertedDate = DateTime.Now;
             Status = DataStatus.Inserted;
         }
-        public int MyClientID { get; set; }
-        public string MyClientImage { get; set; }
-        public bool MyClientStatus { get; set; }
+        public int TestimonialID { get; set; }
+        public string? TestimonialTitle { get; set; }
+        public string? TestimonialContent { get; set; }
+        public string? TestimonialImage { get; set; }
         public DateTime InsertedDate { get; set; }
         public DateTime? UpdatedDate { get; set; }
         public DateTime? DeletedDate { get; set; }
