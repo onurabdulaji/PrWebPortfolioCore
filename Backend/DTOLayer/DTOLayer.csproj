@@ -6,4 +6,26 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AppRoleDTO\" />
+    <Folder Include="AppAboutDTO\" />
+    <Folder Include="AppContactDTO\" />
+    <Folder Include="AppMyClientDTO\" />
+    <Folder Include="AppServiceDTO\" />
+    <Folder Include="AppTestimonialDTO\" />
+    <Folder Include="AppUserDTO\BaseRegistrationDTO\AdminRegistrationDTO\AdminRegistrationRequestModel\" />
+    <Folder Include="AppUserDTO\BaseRegistrationDTO\AdminRegistrationDTO\AdminResetPasswordRequestModel\" />
+    <Folder Include="AppUserDTO\BaseRegistrationDTO\MemberRegistrationDTO\UserResetPasswordRequestModel\" />
+    <Folder Include="AppUserDTO\BaseRegistrationDTO\MemberRegistrationDTO\UserRegistrationRequestModel\" />
+    <Folder Include="AppWorkDTO\" />
+  </ItemGroup>
+
 </Project>

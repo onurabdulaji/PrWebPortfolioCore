@@ -6,4 +6,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Backend\BusinessLayer\BusinessLayer.csproj" />
+    <ProjectReference Include="..\..\Backend\CommonLayer\CommonLayer.csproj" />
+    <ProjectReference Include="..\..\Backend\DTOLayer\DTOLayer.csproj" />
+    <ProjectReference Include="..\..\Backend\EntityLayer\EntityLayer.csproj" />
+    <ProjectReference Include="..\..\Backend\WebApi\WebApi.csproj" />
+  </ItemGroup>
+
 </Project>
