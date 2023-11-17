@@ -1,6 +1,18 @@
+using BusinessLayer.DependencyManagements.CorsResolver;
+using BusinessLayer.DependencyManagements.IdentityResolver;
+using BusinessLayer.DependencyManagements.MappingResolver;
+using BusinessLayer.DependencyManagements.RepositoryResolver;
+using BusinessLayer.DependencyResolvers.ContextResolver;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.ContextResolver();
+builder.Services.CorseResolver();
+builder.Services.IdentityResolver();
+builder.Services.MappingResolver();
+builder.Services.RepositoriesResolver();
 
 
 builder.Services.AddHttpClient();
