@@ -12,7 +12,8 @@ namespace WebApi.Mapping
              .ForMember(u => u.FirstName, opt => opt.MapFrom(x => x.Name))
              .ForMember(u => u.LastName, opt => opt.MapFrom(x => x.Surname))
              .ForMember(u => u.Email, opt => opt.MapFrom(x => x.Mail))
-             .ForMember(u => u.PasswordHash, opt => opt.MapFrom(x => x.Password));
+             .ForMember(u => u.PasswordHash, opt => opt.MapFrom(x => x.Password))
+             .ReverseMap();
         }
     }
 }

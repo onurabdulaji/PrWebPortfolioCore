@@ -23,6 +23,7 @@ namespace DataAccessLayer.Repositories.Concretes
             IdentityResult registerMemberUser = await _userManager.CreateAsync(item, item.PasswordHash);
             if (registerMemberUser.Succeeded)
             {
+                await _userManager.AddToRoleAsync(item, "Member");
                 return true;
             }
             return false;
