@@ -18,9 +18,9 @@ namespace DataAccessLayer.Repositories.Concretes
             _userManager = userManager;
         }
 
-        public async Task<bool> RegisterMemberAsync(AppUser item, string Password)
+        public async Task<bool> RegisterMemberAsync(AppUser item)
         {
-            IdentityResult registerMemberUser = await _userManager.CreateAsync(item, Password);
+            IdentityResult registerMemberUser = await _userManager.CreateAsync(item, item.PasswordHash);
             if (registerMemberUser.Succeeded)
             {
                 return true;

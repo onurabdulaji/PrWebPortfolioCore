@@ -35,7 +35,6 @@
     <Folder Include="AppUserDTO\BaseRegistrationDTO\AdminRegistrationDTO\AdminRegistrationRequestModel\" />
     <Folder Include="AppUserDTO\BaseRegistrationDTO\AdminRegistrationDTO\AdminResetPasswordRequestModel\" />
     <Folder Include="AppUserDTO\BaseRegistrationDTO\MemberRegistrationDTO\UserResetPasswordRequestModel\" />
-    <Folder Include="AppUserDTO\BaseRegistrationDTO\MemberRegistrationDTO\UserRegistrationRequestModel\" />
     <Folder Include="AppWorkDTO\" />
   </ItemGroup>
 

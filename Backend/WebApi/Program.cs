@@ -3,6 +3,7 @@ using BusinessLayer.DependencyManagements.IdentityResolver;
 using BusinessLayer.DependencyManagements.MappingResolver;
 using BusinessLayer.DependencyManagements.RepositoryResolver;
 using BusinessLayer.DependencyResolvers.ContextResolver;
+using EntityLayer.Models;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.CorseResolver();
 builder.Services.IdentityResolver();
 builder.Services.MappingResolver();
 builder.Services.RepositoriesResolver();
+builder.Services.AddAutoMapper(typeof(Program));
 
 // Add services to the container.
 

@@ -9,6 +9,6 @@ namespace DataAccessLayer.Repositories.Abstracts
 {
     public interface IAppUserRepository : IRepository<AppUser>
     {
-        Task<bool> RegisterMemberAsync(AppUser item, string Password);
+        Task<bool> RegisterMemberAsync(AppUser item);
     }
 }
