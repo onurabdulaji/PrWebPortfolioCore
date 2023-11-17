@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using DTOLayer.AppUserDTO.BaseRegistrationDTO.MemberRegistrationDTO.UserRegistrationRequestModel;
+using EntityLayer.Models;
 
 namespace MVCUI.Mapping
 {
@@ -6,7 +8,7 @@ namespace MVCUI.Mapping
     {
         public AutoMapperUIConfig()
         {
-
+            CreateMap<MemberCreateDTO, AppUser>();
         }
     }
 }
