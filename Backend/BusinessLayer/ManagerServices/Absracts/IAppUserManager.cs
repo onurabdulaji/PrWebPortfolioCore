@@ -9,5 +9,6 @@ namespace BusinessLayer.ManagerServices.Absracts
 {
     public interface IAppUserManager : IManager<AppUser>
     {
+        Task<bool> TRegisterMemberAsync(AppUser item, string Password);
     }
 }

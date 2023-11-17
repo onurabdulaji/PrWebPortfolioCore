@@ -17,5 +17,18 @@ namespace BusinessLayer.ManagerServices.Concretes
         {
             _appUserRepository = appUserRepository;
         }
+
+        public async Task<bool> TRegisterMemberAsync(AppUser item, string Password)
+        {
+            if (item.Email == null && item.UserName == null && Password == null)
+            {
+                return false;
+            }
+            else
+            {
+                var result = await _appUserRepository.RegisterMemberAsync(item, Password);
+                return result;
+            }
+        }
     }
 }
